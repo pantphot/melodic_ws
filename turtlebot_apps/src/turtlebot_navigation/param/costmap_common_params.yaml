@@ -29,7 +29,7 @@ obstacle_layer:
   observation_sources:  scan #bump
   scan:
     data_type: LaserScan
-    sensor_frame: base_laser_link
+    sensor_frame: camera_rgb_frame
     topic: scan
     marking: true
     clearing: true
