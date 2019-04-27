@@ -5,11 +5,15 @@
     <arg name="rgb_processing" value="false" />
     <arg name="depth_registration" value="false" />
     <arg name="depth_processing" value="false" />
-    
+
     <!-- We must specify an absolute topic name because if not it will be prefixed by "$(arg camera)".
-         Probably is a bug in the nodelet manager: https://github.com/ros/nodelet_core/issues/7 --> 
+         Probably is a bug in the nodelet manager: https://github.com/ros/nodelet_core/issues/7 -->
     <arg name="scan_topic" value="/scan" />
   </include>
+
+  <!-- Turtlebot -->
+
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
 
 <!-- Map server -->
   <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
