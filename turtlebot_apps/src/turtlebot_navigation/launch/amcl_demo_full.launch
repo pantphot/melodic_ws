@@ -33,7 +33,7 @@
   </include>
 
   <!--TF-->
-  <node name="static_tf_pub_base_rgb" pkg="tf" type="static_transform_publisher" args="-0.087 -0.0125 0.287 0 0 0 1 base_footprint camera_rgb_frame " />
-  <node name="static_tf_pub_rgb_depth" pkg="tf" type="static_transform_publisher" args="-0 -0.250 0 0 0 0 1 camera_rgb_frame camera_depth_frame" />
+  <node name="static_tf_pub_base_rgb" pkg="tf2_ros" type="static_transform_publisher" args="0 -0.0125 0.287 0 0 0 1 base_footprint camera_rgb_optical_frame" />
+  <node name="static_tf_pub_rgb_depth" pkg="tf2_ros" type="static_transform_publisher" args="-0 -0.250 0 0 0 0 1 camera_rgb_optical_frame camera_depth_optical_frame" />
 
 </launch>
