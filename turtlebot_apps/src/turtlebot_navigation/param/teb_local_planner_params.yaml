@@ -151,11 +151,11 @@ TebLocalPlannerROS:
 
 # Allowed final euclidean distance to the goal position
   #xy_goal_tolerance: 0.10
-  xy_goal_tolerance: 0.1
+  xy_goal_tolerance: 0.2
 
 # Allowed final orientation error to the goal orientation
   #yaw_goal_tolerance: 0.1
-  yaw_goal_tolerance: 0.05
+  yaw_goal_tolerance: 4
 
 # Allow the robot's velocity to be nonzero for planning purposes
 # (the robot can arrive at the goal with max speed)
