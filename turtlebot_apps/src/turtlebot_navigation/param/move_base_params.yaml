@@ -22,8 +22,8 @@ shutdown_costmaps: false
 
 # local planner
 # alternatives: dwa_local_planner/DWAPlannerROS, teb_local_planner/TebLocalPlannerROS
-base_local_planner: "dwa_local_planner/DWAPlannerROS"
-#base_local_planner: "teb_local_planner/TebLocalPlannerROS"
+#base_local_planner: "dwa_local_planner/DWAPlannerROS"
+base_local_planner: "teb_local_planner/TebLocalPlannerROS"
 base_global_planner: "navfn/NavfnROS" #alternatives: global_planner/GlobalPlanner, carrot_planner/CarrotPlanner
 
 # move_base will invoke the recovery behaviors on three conditions:
